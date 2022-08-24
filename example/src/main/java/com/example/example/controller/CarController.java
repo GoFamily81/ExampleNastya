@@ -19,7 +19,7 @@ public class CarController {
     CarService carService;
 
     @GetMapping("/{id}")
-    public Car getCardById(@PathVariable Integer id) {
+    public Car getCardBId(@PathVariable Integer id) {
         return carService.getCarById(id);
     }
 
@@ -30,7 +30,7 @@ public class CarController {
     }
 
     @DeleteMapping("/delete/{id}")
-    public String deleteByCar(@PathVariable Integer id) {
+    public String deleteBCar(@PathVariable Integer id) {
         return carService.deleteCarById(id);
     }
 
